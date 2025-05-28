@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="css/estilo.css">
+	<title>FERRETERIA DE VICTOR INDA - INICIO</title>
+</head>
+<body>
+	<header>
+		<img src="img/logo.jpg" class="logo">
+		<h1>FERRETERIA DE VICTOR INDA</h1>
+	</header>
+	<div class="contenedor">
+		<nav>
+			<button onclick="location.href='index.html'" id="btnIndex">Inicio</button>
+			<button onclick="location.href='form.html'">Formulario</button>
+			<button onclick="location.href='galery.html'">Galeria</button>
+			<button onclick="location.href='aboutus.html'" id="btnAboutus">Quienes Somos</button>
+		</nav>
+		<main>
+			<div class="titulo">
+				<h2>FORMULARIO</h2>
+			</div>
+			<div class="contenido">
+				<form>
+					<div class="info_p">
+					<h3>Informacion personal (opcional)</h3>
+					<label>Nombre: </label>
+					<input type="text" name="nombre" id="name" placeholder="Ingresa tu nombre"><br>
+					<label>Apellidos: </label>
+					<input type="text" name="apellidos" id="lname" placeholder="Ingresa tu apellido"><br>
+					<label>Edad: </label>
+					<input type="number" name="edad" id="age" placeholder="Ingresa tu edad" min="0"><br>
+					<label>Sexo: </label>
+					<select id="sex">
+						<option>Seleccionar</option>
+						<option>Masculino</option>
+						<option>Femenino</option>
+					</select><br>
+					<label>Direccion: </label>
+					<input type="text" name="direccion" id="address" placeholder="Ingresa tu direccion"><br>
+					<label>Telefono: </label>
+					<input type="text" name="telefono" id="number" placeholder="Ingresa tu telefono"><br>
+					<p>
+						Esta informacion nos permite saber con que tanto frecuentas nuestra tienda y podemos
+						recomendarte productos con la informacion recopilada. Ademas podrias recibir ofertas 
+						exclusivas.
+					</p>
+					</div>
+					<div class="info_c">
+						<h3>Compra tu producto</h3>
+						<label>Producto: </label>
+						<input type="text" name="nombrep" id="namep" placeholder="Ingresa el nombre del producto"><br>
+						<label>Precio: </label>
+						<input type="number" name="precio" id="price" placeholder="Ingresa el precio" min="0"><br>
+						<label>Cantidad: </label>
+						<input type="number" name="cantidad" id="amount" placeholder="Ingresa la cantidad" min="0"><br>
+						<label>Descuento: </label>
+						<input type="number" name="descuento" id="discount" placeholder="Ingresa el descuento" min="0"><br>
+						<label>Metodo de pago: </label>
+						<select id="method">
+							<option>Tajeta de credito</option>
+							<option>Tajeta de debito</option>
+							<option>En efectivo</option>
+							<option>Otro</option>
+						</select><br>
+						<label>Fecha: </label>
+						<input type="date" name="fecha" id="date"><br>
+						<label>Marca: </label>
+						<select id="brand">
+							<option>Marca 1</option>
+							<option>Marca 2</option>
+							<option>Marca 3</option>
+							<option>Marca 4</option>
+							<option>Marca 5</option>
+						</select><br>
+						<label>Tipo de producto: </label>
+						<select id="type">
+							<option>Abrasivos</option>
+							<option>Tornillos</option>
+							<option>Tuercas</option>
+							<option>Adhesivos</option>
+							<option>Herramientas electricas</option>
+							<option>Herramientas manuales</option>
+							<option>Material electrico</option>
+							<option>Iluminacion</option>
+						</select><br>
+						<label>Presentacion: </label>
+						<input type="text" name="presentacion" id="prese" placeholder="Ingresa como se presenta el producto"><br>
+					</div>
+					<div class="controles" align="center">
+						<input type="submit" name="comprar" id="buy" value="Comprar">
+						<input type="reset" name="borrar" id="delete" value="Borrar">
+					</div>
+				</form>
+			</div>
+		</main>
+	</div>
+	<footer>
+		<p>
+			TODOS LOS DERECHOS RESERVADOS - CB206<br>
+			MAESTRA ALONDRA ZAVALA<br>
+			VICTOR INDA 2025
+		</p>
+	</footer>
+</body>
+</html>
